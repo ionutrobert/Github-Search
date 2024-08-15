@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+    background-color: whitesmoke;
+    color:#bbb;
+    background-image: linear-gradient(315deg, #5c5c5c 0%, #201f1f 74%);
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+input::placeholder{
+    color: #bbb;
+}
+input:focus{
+    outline: none;
+}
+input{
+    background-color: #3b3e3f;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+        0 15px 40px rgba(0, 0, 0, 0.1);
+    border: none;
+    color: whitesmoke;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.card{
+    background-color: #083535;
+    background-image:  linear-gradient(315deg, #797979 0%, #404140 100%);
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0,0,0,0.1);
+    display: flex;
+    padding: 3rem;
+    max-width: 800px;
+    margin-bottom:20px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.avatar {
+    border: 10px solid whitesmoke;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+
+}
+.info{
+
+}
+li{
+    margin-right:10px;
+    flex-wrap: nowrap;
+}
+.user-info{
+    color: #eee;
+    margin-left: 2rem;
+
+}
+.user-info h2{
+    margin-top: 0;
+}
+.user-info li ul {
+    display: flex;
+    align-items: center;
+}
+.user-info ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    /*set list type to none*/
+    padding:0;
+    max-width: 800px;
+    /*no need for differnet screen config*/
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.user-info ul li strong {
+    font-size: 0.9rem;
+    
 }
 
-.App-link {
-  color: #61dafb;
+#repos {
+    justify-content: center;
+    text-align: center;
+}
+.repo {
+    background-color:#141516;
+    border-radius: 20px;
+    align-content:center;
+    gap: 10px;
+    max-width: 800px;
+    font-size: 0.7rem;
+    padding: 1rem;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    color: whitesmoke;
+    display:flex;
+    align-items:center;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    align-items:center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.badge {
+    border-radius: 0.25rem;
+    color: #fff;
+    display: inline-block;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0.35em 0.65em;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    margin-right:10px;
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(13,110,253,var(--bs-bg-opacity))!important;
+}
+.bg-secondary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(108,117,125,var(--bs-bg-opacity))!important;
+}
+.bg-success {
+    --bs-bg-opacity: 1;
+    background-color: rgba(25,135,84,var(--bs-bg-opacity))!important;
+}
+
+.bg-info {
+    --bs-bg-opacity: 1;
+    background-color: rgba(13,202,240,var(--bs-bg-opacity))!important;
+}
+
+.gist {
+    max-width: 800px;
+    background-color:#141516;
+    border-radius: 20px;
+    display: flexbox;
+    font-size: 0.6rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    color: whitesmoke;
+    justify-content: center;
+    text-align: center!important;
+}
+
+.text-main{
+    text-decoration: none;
+    color: black;
+}
+.ftext{
+    margin-top: 1rem;
 }
