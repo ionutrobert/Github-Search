@@ -71,7 +71,9 @@ export default function MainComponent() {
   };
 
   return (
+    
     <main className="container mx-auto px-4 py-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <div className="search mb-8">
         <div className="mb-4">
           <h1 className="text-3xl font-bold">Search Github User</h1>

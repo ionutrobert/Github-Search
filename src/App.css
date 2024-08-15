@@ -59,9 +59,6 @@ input{
     width: 150px;
 
 }
-.info{
-
-}
 li{
     margin-right:10px;
     flex-wrap: nowrap;
@@ -181,3 +178,163 @@ li{
 .ftext{
     margin-top: 1rem;
 }
+
+/* Media Query for Tablets and Small Laptops (max-width: 768px) */
+@media (max-width: 768px) {
+    main {
+        padding: 0 1rem; /* Add padding to the main container */
+    }
+
+    .card, .repo, .gist {
+        padding: 1.5rem; /* Reduce padding */
+        margin-bottom: 1rem;
+        width: 100%; /* Ensure full width */
+        max-width: 100%;
+    }
+
+    .avatar {
+        height: 100px;
+        width: 100px;
+        border-width: 5px; /* Reduce border size */
+        margin: 0 auto 1rem; /* Center and add spacing */
+    }
+
+    .user-info {
+        margin-left: 0;
+        text-align: center; /* Center-align text */
+    }
+
+    .user-info h2 {
+        font-size: 1.4rem; /* Adjust heading size */
+    }
+
+    .user-info ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .user-info ul li {
+        width: 100%;
+        text-align: left;
+        padding: 0 0.5rem; /* Add padding for spacing */
+        margin-bottom: 0.5rem;
+    }
+
+    .badge {
+        font-size: 0.7em;
+        padding: 0.3em 0.5em;
+    }
+
+    input {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Media Query for Tablets and Small Laptops (max-width: 768px) */
+@media (max-width: 768px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .avatar {
+        height: 100px;
+        width: 100px;
+        border-width: 5px;
+        margin: 0 auto 1rem;
+        display: block;
+    }
+
+    .user-info {
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .user-info h2 {
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+
+    .user-info small {
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .user-info p {
+        margin: 0.5rem 0;
+    }
+
+    .user-info ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+    }
+
+    .user-info ul li {
+        width: 100%;
+        text-align: center;
+        padding: 0.25rem 0;
+    }
+
+    .user-info ul li strong {
+        display: block;
+        margin-top: 0.25rem;
+    }
+
+    .user-info ul.info {
+        margin-bottom: 1rem;
+    }
+
+    a.inline-block {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+/* Media Query for Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .card {
+        padding: 1rem;
+    }
+
+    .avatar {
+        height: 80px;
+        width: 80px;
+        margin-bottom: 0.5rem;
+    }
+
+    .user-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .user-info ul li {
+        padding: 0.25rem 0;
+    }
+
+    .user-info ul li strong {
+        font-size: 0.8rem;
+        margin-top: 0.25rem;
+    }
+
+    .user-info small {
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+    }
+
+    a.inline-block {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
+}
+
