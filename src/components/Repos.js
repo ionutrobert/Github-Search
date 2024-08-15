@@ -11,7 +11,7 @@ export default function Repos(user) {
 
       {repos.map((repo) => {
         return (
-          <div key={repo.id} className="repo">
+          <div key={repo.id} className="repo" >
             <div className="column">
               <h3>
                 <a
