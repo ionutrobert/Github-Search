@@ -47,7 +47,7 @@ export default function Repos(user) {
                 <p className="badge bg-primary p-2 mx-2">
                   Stars: {repo.stargazers_count}
                 </p>
-                <p className="badge bg-secondary p-2 mx-2">
+                <p className="badge bg-secondary p-2 mx-2 ">
                   Watchers: {repo.watchers_count}
                 </p>
                 <p className="badge bg-success p-2">
